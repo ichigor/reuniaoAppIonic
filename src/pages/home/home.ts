@@ -49,11 +49,11 @@ export class HomePage {
     this.platform.ready().then(() => {
       FCMPlugin.getToken(
         function (token) {
-          console.log(token); //I can get the token data
-          this.local.set('tokenvalue', token); // the token value can't be saved to local storage like this
+          console.log(token); //se pegar o token apresenta ele
+          this.local.set('token', token); // manda pro local storage o token se pegar
         },
         function (err) {
-          console.log('error retrieving token: ' + err);
+          console.log('erro: ' + err);
         }
       );
     })
