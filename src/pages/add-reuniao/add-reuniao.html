@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Adicionar Reunião</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label>Nome</ion-label>
+    <ion-input [(ngModel)]="reuniao.titulo" placeholder="Titulo Reuniao"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Dia</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY HH:mm" pickerFormat="DD/MM/YYYY HH:mm" [(ngModel)] ="reuniao.dia" [min]="minDate"></ion-datetime>
+  </ion-item>
+   <button ion-button block clear (click)="addReuniao(reuniao)">Adicionar</button> 
+
+</ion-content>

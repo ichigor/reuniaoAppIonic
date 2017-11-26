@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Reuniões
     </ion-title>
+    <ion-buttons end>
+      <button navPush="AddReuniaoPage" ion-button>
+        <ion-icon name="add"></ion-icon>
+        </button>
+      
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-list-header>
+      Cadastradas
+    </ion-list-header>
+    <ion-item *ngFor = "let reuniao of reunioesList$ | async" 
+    detail-push navPush="EditReuniaoPage" [navParams]="{reuniao: reuniao}">
+      {{reuniao.titulo}}
+    </ion-item>
+  </ion-list>
 </ion-content>

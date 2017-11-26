@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "218677600646",
+    "firebase_url": "https://projetodispositivo.firebaseio.com",
+    "project_id": "projetodispositivo",
+    "storage_bucket": "projetodispositivo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218677600646:android:b6cec55980d8bbc8",
+        "android_client_info": {
+          "package_name": "com.reuniaoApp.igor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218677600646-kk5kmh4knhmmhhj431ku5f6lpgtrrcef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8vxOP2bX-Z4L3PqXTt23Jsu24yMU6wkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
